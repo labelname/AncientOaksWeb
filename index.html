@@ -23,13 +23,11 @@
 
     <title>Ancient Oaks | Luxury Community Living</title>
 
-    <!-- Performance Enhancements -->
+    <!-- External Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- External Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -37,7 +35,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="index.html" rel="noopener noreferrer">
+                <a href="index.html">
                     <span class="company-name">Ancient Oaks</span>
                     <span class="tagline">Luxury Community Living</span>
                 </a>
@@ -46,16 +44,16 @@
                 <i class="fas fa-bars"></i>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active" rel="noopener noreferrer">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li class="dropdown">
                     <a href="#" aria-haspopup="true">Residents <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
-                        <li><a href="documents.html" rel="noopener noreferrer">Documents & Forms</a></li>
-                        <li><a href="rules.html" rel="noopener noreferrer">Rules & Guidelines</a></li>
-                        <li><a href="maintenance.html" rel="noopener noreferrer">Maintenance Requests</a></li>
+                        <li><a href="documents.html">Documents & Forms</a></li>
+                        <li><a href="rules.html">Rules & Guidelines</a></li>
+                        <li><a href="maintenance.html">Maintenance Requests</a></li>
                     </ul>
                 </li>
-                <li><a href="privacy.html" rel="noopener noreferrer">Info</a></li>
+                <li><a href="privacy.html">Info</a></li>
             </ul>
         </div>
     </nav>
@@ -66,12 +64,9 @@
             <h1>Welcome to<br>Ancient Oaks</h1>
             <p>Where spacious homes, scenic nature, and tranquility meet.</p>
             <div class="hero-cta">
-                <a href="#community" class="primary-btn" rel="noopener noreferrer">Explore Our Community</a>
+                <a href="#community" class="primary-btn">Explore Our Community</a>
                 <a href="https://home.amiwra.com/dashboard" class="secondary-btn" target="_blank" rel="noopener noreferrer">Resident Portal</a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
@@ -88,18 +83,17 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="documents.html" rel="noopener noreferrer">HOA Documents</a></li>
-                        <li><a href="calendar.html" rel="noopener noreferrer">Community Calendar</a></li>
-                        <li><a href="newsletter.html" rel="noopener noreferrer">Newsletter</a></li>
-                        <li><a href="emergency.html" rel="noopener noreferrer">Emergency Contacts</a></li>
+                        <li><a href="documents.html">HOA Documents</a></li>
+                        <li><a href="calendar.html">Community Calendar</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="emergency.html">Emergency Contacts</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Stay Connected</h4>
                     <p>Sign up for community updates</p>
-                    <form class="newsletter-form" method="POST" action="/subscribe" autocomplete="off">
-                        <label for="email" class="visually-hidden">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" maxlength="100">
+                    <form class="newsletter-form" method="POST" action="/subscribe">
+                        <input type="email" name="email" placeholder="Enter your email" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -113,6 +107,6 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="scripts.js" defer></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
