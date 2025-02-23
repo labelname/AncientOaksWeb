@@ -29,7 +29,7 @@
 
     <!-- External Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -42,13 +42,13 @@
                     <span class="tagline">Luxury Community Living</span>
                 </a>
             </div>
-            <a href="menu.html" class="menu-button">
+            <a href="menu.html" class="menu-button" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active" rel="noopener noreferrer">Home</a></li>
                 <li class="dropdown">
-                    <a href="#" aria-haspopup="true">Residents <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" aria-haspopup="true" aria-expanded="false">Residents <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-content">
                         <li><a href="documents.html" rel="noopener noreferrer">Documents & Forms</a></li>
                         <li><a href="rules.html" rel="noopener noreferrer">Rules & Guidelines</a></li>
@@ -99,7 +99,7 @@
                     <p>Sign up for community updates</p>
                     <form class="newsletter-form" method="POST" action="/subscribe" autocomplete="off">
                         <label for="email" class="visually-hidden">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" maxlength="100">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" maxlength="100" aria-label="Enter your email address">
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -111,8 +111,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
     <script src="scripts.js" defer></script>
 </body>
 </html>
