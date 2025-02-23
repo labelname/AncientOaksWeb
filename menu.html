@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Ancient Oaks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-page {
+            min-height: 100vh;
+            background: var(--white);
+            padding: 2rem 0;
+        }
+
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .close-btn {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .menu-links {
+            padding: 2rem;
+        }
+
+        .menu-links ul {
+            list-style: none;
+        }
+
+        .menu-links li {
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: block;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .menu-links a:hover {
+            background: var(--light-bg);
+            color: var(--accent-color);
+        }
+
+        .menu-section {
+            margin-bottom: 2rem;
+        }
+
+        .menu-section-title {
+            font-family: var(--heading-font);
+            color: var(--light-text);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            padding: 0 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-page">
+        <div class="menu-header">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="company-name">Ancient Oaks</span>
+                </a>
+            </div>
+            <a href="index.html" class="close-btn">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+
+        <nav class="menu-links">
+            <div class="menu-section">
+                <h2 class="menu-section-title">Navigation</h2>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="amenities.html"><i class="fas fa-swimming-pool"></i> Amenities</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-section-title">Residents</h2>
+                <ul>
+                    <li><a href="documents.html"><i class="fas fa-file-alt"></i> Documents & Forms</a></li>
+                    <li><a href="rules.html"><i class="fas fa-list-ul"></i> Rules & Guidelines</a></li>
+                    <li><a href="maintenance.html"><i class="fas fa-tools"></i> Maintenance Requests</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-section-title">Quick Links</h2>
+                <ul>
+                    <li><a href="https://home.amiwra.com/dashboard" target="_blank"><i class="fas fa-external-link-alt"></i> Resident Portal</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    <li><a href="emergency.html"><i class="fas fa-exclamation-circle"></i> Emergency Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
