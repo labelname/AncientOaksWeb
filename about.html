@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ancient Oaks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/IMG_1808.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .about-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content {
+            padding: 6rem 0;
+            background: var(--light-bg);
+        }
+
+        .about-section {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 4rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-section h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            font-family: var(--heading-font);
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--light-bg);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .value-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .about-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-section {
+                padding: 2rem;
+            }
+
+            .about-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="company-name">Ancient Oaks</span>
+                    <span class="tagline">Luxury Community Living</span>
+                </a>
+            </div>
+            <a href="menu.html" class="menu-button">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Header -->
+    <header class="about-header">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p>Building a strong and supportive community</p>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <main class="about-content">
+        <div class="container">
+            <section class="about-section">
+                <h2>Welcome to Ancient Oaks</h2>
+                <p> Welcome to Ancient Oaks in Parrish, Florida – a serene and picturesque community with beautiful homes set on expansive lots, Ancient Oaks offers a perfect blend of space, tranquility, and comfort. Residents enjoy the charm of lakes and nature preserves that enhance the neighborhood's scenic beauty. With low HOA fees and a focus on maintaining a welcoming environment, Ancient Oaks provides a peaceful retreat while offering the benefits of community living. It's an ideal place to call home for those seeking beauty, space, and a touch of relaxing Florida</p>
+                <p>At Ancient Oaks, we believe that building a strong and supportive community is key to our success. That's why we've created a platform that puts people first, and fosters a sense of belonging and connection among our users.</p>
+            </section>
+
+            <section class="about-section">
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-home"></i>
+                        <h3>Excellence</h3>
+                        <p>Maintaining the highest standards in community living and management.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Community</h3>
+                        <p>Fostering meaningful connections among residents and families.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Sustainability</h3>
+                        <p>Committed to environmental stewardship and sustainable practices.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Ancient Oaks Drive</p>
+                    <p><i class="fas fa-phone"></i> (234) 567-890</p>
+                    <p><i class="fas fa-envelope"></i> info@ancientoakshoa.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="documents.html">HOA Documents</a></li>
+                        <li><a href="calendar.html">Community Calendar</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright © 2025 Ancient Oaks - All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
