@@ -245,8 +245,7 @@ main {
 
 /* Documents Page Styles */
 .privacy-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.imgur.com/buQxubP.jpeg');
-
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Assets/IMG_1808.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
