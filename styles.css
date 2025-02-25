@@ -176,8 +176,7 @@ main {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/IMG_1808.jpg');
-
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/AncientOaksWeb/Assets/IMG_1808.jpg');
     background-position: center;
     background-attachment: fixed;
     color: var(--white);
@@ -245,7 +244,7 @@ main {
 
 /* Documents Page Styles */
 .privacy-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Assets/IMG_1808.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/AncientOaksWeb/Assets/IMG_1808.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
