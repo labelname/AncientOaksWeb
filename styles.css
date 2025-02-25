@@ -177,7 +177,7 @@ main {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/AncientOaksWeb/Assets/1740524273592.jpg');
-    background-position: center;
+    background-position: cover;
     background-attachment: fixed;
     color: var(--white);
     padding: 15rem 0 13rem;
