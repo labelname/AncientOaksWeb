@@ -176,8 +176,9 @@ main {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/AncientOaksWeb/Assets/1740524273592.jpg');
-    background-position: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Assets/1740524273592.jpg');
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     color: var(--white);
     padding: 15rem 0 13rem;
@@ -244,7 +245,7 @@ main {
 
 /* Documents Page Styles */
 .privacy-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/AncientOaksWeb/Assets/1740524273592.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Assets/IMG_1808.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -412,7 +413,6 @@ footer {
         flex-direction: column;
     }
 
-    /* Footer adjustment for smaller screens */
     .footer-content {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -423,9 +423,6 @@ footer {
     }
 }
 
-
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 3.5rem;
@@ -443,45 +440,12 @@ footer {
         display: none;
     }
 
-    /* Footer adjustment for smaller screens */
     .footer-content {
-        grid-template-columns: 1fr; /* Stacks footer sections in one column */
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
     .footer-section h4 {
-        font-size: 1rem; /* Reduces size of footer section headings */
+        font-size: 1rem;
     }
 }
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 3.5rem;
-    }
-    
-    .hero p {
-        font-size: 1.2rem;
-    }
-    
-    .hero-cta {
-        flex-direction: column;
-    }
-    
-    .nav-links {
-        display: none;
-    }
-
-    /* Footer adjustment for smaller screens */
-    .footer-content {
-        grid-template-columns: 1fr; /* Stacks footer sections in one column */
-        gap: 1.5rem;
-    }
-
-    .footer-section h4 {
-        font-size: 1rem; /* Reduces size of footer section headings */
-    }
-}
-
